@@ -53,12 +53,12 @@ pinout:
   uio[7]: ""
 
   # Analog pins - make sure to also set "analog_pins" above, else the pins won't be connected
-  ua[0]: "out"
+  ua[0]: "in0"
   ua[1]: "in1"
   ua[2]: "in2"
-  ua[3]: ""
-  ua[4]: ""
-  ua[5]: ""
+  ua[3]: "out1"
+  ua[4]: "out2"
+  ua[5]: "out3"
 
 # Do not change!
 yaml_version: 6

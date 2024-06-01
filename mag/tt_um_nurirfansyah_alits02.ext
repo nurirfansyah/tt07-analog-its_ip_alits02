@@ -1,13 +1,11 @@
-timestamp 1717264966
+timestamp 1717269115
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
 use vco vco_0 1 0 25450 0 1 3880
-port "ua[3]" 6 18034 0 18214 200 m4
-port "ua[4]" 7 13618 0 13798 200 m4
-port "ua[5]" 8 9202 0 9382 200 m4
+use pll pll_0 1 0 14390 0 1 9446
 port "ua[6]" 9 4786 0 4966 200 m4
 port "ua[7]" 10 370 0 550 200 m4
 port "ena" 1 31710 44952 31770 45152 m4
@@ -54,13 +52,13 @@ port "uio_oe[3]" 30 3742 44952 3802 45152 m4
 port "uio_oe[2]" 29 4478 44952 4538 45152 m4
 port "uio_oe[1]" 28 5214 44952 5274 45152 m4
 port "uio_oe[0]" 27 5950 44952 6010 45152 m4
-port "ua[2]" 5 22450 0 22630 200 m4
 port "ua[0]" 3 31282 0 31462 200 m4
+port "ua[4]" 7 13618 0 13798 200 m4
+port "ua[5]" 8 9202 0 9382 200 m4
 port "ua[1]" 4 26866 0 27046 200 m4
+port "ua[2]" 5 22450 0 22630 200 m4
+port "ua[3]" 6 18034 0 18214 200 m4
 port "VPWR" 51 200 1000 500 44152 m4
-node "ua[3]" 0 146.962 18034 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 760 0 0 0 0
-node "ua[4]" 0 146.962 13618 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 760 0 0 0 0
-node "ua[5]" 0 146.962 9202 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 760 0 0 0 0
 node "ua[6]" 0 146.962 4786 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 760 0 0 0 0
 node "ua[7]" 0 132.117 370 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 760 0 0 0 0
 node "ena" 0 73.2969 31710 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
@@ -90,7 +88,7 @@ node "uo_out[4]" 0 48.6998 14782 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "uo_out[5]" 0 48.6998 14046 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
 node "uo_out[6]" 0 48.6998 13310 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
 node "uo_out[7]" 0 48.6998 12574 44952 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 0 0 0 0
-node "VGND" 4 35247.8 9800 1000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10973600 39000 284200 2140 14925016 117060 0 0 0 0
+node "VGND" 4 37619.3 9800 1000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10973600 39000 284200 2140 16775216 129820 0 0 0 0
 equiv "VGND" "uio_out[7]"
 equiv "VGND" "uio_out[6]"
 equiv "VGND" "uio_out[5]"
@@ -107,10 +105,13 @@ equiv "VGND" "uio_oe[3]"
 equiv "VGND" "uio_oe[2]"
 equiv "VGND" "uio_oe[1]"
 equiv "VGND" "uio_oe[0]"
-node "ua[2]" 5 4150.65 22450 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74200 1820 671800 6980 823300 10000 97200 1440 0 0 0 0
 node "ua[0]" 4 3816.17 31282 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40500 960 433600 5740 920000 9600 91300 1380 0 0 0 0
-node "ua[1]" 6 4774.35 26866 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224300 4260 617400 6720 828900 10060 86700 1340 0 0 0 0
-node "VPWR" 9 33850.3 200 1000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 640800 13300 9236000 46980 160000 1600 12985600 87104 0 0 0 0
+node "ua[4]" 3 4210.34 13618 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 286800 2580 118800 1380 118800 1380 2301573 22324 0 0 0 0
+node "ua[5]" 4 5614.81 9202 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 483600 3740 99200 1260 99200 1260 2910350 28090 0 0 0 0
+node "ua[1]" 20 16592.1 26866 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4018300 42676 1407600 14716 828900 10060 86700 1340 0 0 0 0
+node "ua[2]" 13 10440.5 22450 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 860400 10476 2570800 26288 823300 10000 97200 1440 0 0 0 0
+node "ua[3]" 4 7152.23 18034 0 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 212720 4008 65000 1020 3499950 21850 607272 6308 0 0 0 0
+node "VPWR" 15 44216.7 200 1000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1767608 29252 13324700 72420 334900 3320 13061500 87564 0 0 0 0
 node "w_28530_4530#" 18519 0 28530 4530 pw 5600 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_28490_4530#" 17600 0 28490 4530 pw 400 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_28000_4510#" 6050 0 28000 4510 pw 8800 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -120,157 +121,366 @@ node "w_26880_4510#" 6050 0 26880 4510 pw 8800 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_26290_4530#" 18519 0 26290 4530 pw 5600 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_26250_4530#" 17600 0 26250 4530 pw 400 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_25830_4510#" 4400 0 25830 4510 pw 1600 160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_17986_11730#" 18519 0 17986 11730 pw 5600 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_17946_11730#" 17600 0 17946 11730 pw 400 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_17456_11710#" 6050 0 17456 11710 pw 8800 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_16866_11730#" 18519 0 16866 11730 pw 5600 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_16826_11730#" 17600 0 16826 11730 pw 400 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_16336_11710#" 6050 0 16336 11710 pw 8800 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_15746_11730#" 18519 0 15746 11730 pw 5600 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_15706_11730#" 17600 0 15706 11730 pw 400 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_15286_11710#" 4400 0 15286 11710 pw 1600 160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "VGND" "VPWR" 911.492
-cap "ui_in[5]" "ui_in[4]" 23.7975
-cap "VGND" "w_26290_4530#" 0.413452
 cap "ua[2]" "w_26880_4510#" 0.0865422
-cap "w_28000_4510#" "VGND" 0.64704
-cap "VPWR" "w_26290_4530#" 0.789402
-cap "w_28000_4510#" "VPWR" 1.25129
-cap "uio_in[6]" "uio_in[5]" 23.7975
-cap "ua[2]" "w_26250_4530#" 0.02046
-cap "w_25830_4510#" "VGND" 0.121568
-cap "ui_in[1]" "ui_in[0]" 23.7975
-cap "w_25830_4510#" "VPWR" 0.21592
-cap "ua[2]" "VGND" 692.98
-cap "ui_in[6]" "ui_in[7]" 23.7975
-cap "ua[2]" "VPWR" 64.8555
-cap "uo_out[2]" "uo_out[1]" 23.7975
-cap "ua[7]" "VPWR" 13.3698
-cap "ua[2]" "w_26290_4530#" 0.275266
-cap "VGND" "uo_out[7]" 23.7975
-cap "w_28490_4530#" "ua[1]" 0.128468
-cap "uio_in[4]" "uio_in[3]" 23.7975
-cap "ua[0]" "VGND" 0.177924
-cap "uio_in[7]" "uo_out[0]" 23.7975
-cap "ua[2]" "w_25830_4510#" 0.799287
-cap "VGND" "ua[1]" 15.9482
-cap "VGND" "w_28530_4530#" 0.293907
-cap "VPWR" "ua[1]" 118.852
-cap "w_28000_4510#" "ua[1]" 0.999488
-cap "clk" "rst_n" 23.7975
-cap "ui_in[0]" "rst_n" 23.7975
-cap "ui_in[2]" "ui_in[1]" 23.7975
-cap "ua[2]" "ua[1]" 17.3246
-cap "uio_in[7]" "uio_in[6]" 23.7975
-cap "uio_in[1]" "uio_in[2]" 23.7975
-cap "w_27410_4530#" "VGND" 0.413452
-cap "w_27410_4530#" "VPWR" 0.789402
-cap "uio_in[1]" "uio_in[0]" 23.7975
-cap "ua[0]" "ua[1]" 408.216
-cap "ua[0]" "w_28530_4530#" 0.742879
-cap "ui_in[3]" "ui_in[4]" 23.7975
-cap "w_26880_4510#" "VGND" 0.64704
-cap "uo_out[3]" "uo_out[4]" 23.7975
-cap "uio_in[4]" "uio_in[5]" 23.7975
-cap "w_26880_4510#" "VPWR" 1.25129
-cap "VGND" "w_26250_4530#" 0.0293907
-cap "ui_in[2]" "ui_in[3]" 23.7975
 cap "clk" "ena" 23.7975
-cap "w_28530_4530#" "ua[1]" 1.72444
-cap "w_26250_4530#" "VPWR" 0.0567937
-cap "uo_out[5]" "uo_out[4]" 23.7975
-cap "VGND" "w_28490_4530#" 0.0293907
-cap "ui_in[6]" "ui_in[5]" 23.7975
-cap "uio_in[0]" "ui_in[7]" 23.7975
-cap "uo_out[6]" "uo_out[7]" 23.7975
-cap "uo_out[1]" "uo_out[0]" 23.7975
-cap "uio_in[2]" "uio_in[3]" 23.7975
-cap "uo_out[3]" "uo_out[2]" 23.7975
-cap "w_27370_4530#" "VGND" 0.0293907
+cap "w_28530_4530#" "VGND" 0.293907
+cap "ua[1]" "w_28000_4510#" 0.999488
+cap "ua[1]" "w_28490_4530#" 0.128468
+cap "rst_n" "clk" 23.7975
+cap "ui_in[5]" "ui_in[4]" 23.7975
+cap "VPWR" "w_16826_11730#" 0.0225625
+cap "uio_in[7]" "uio_in[6]" 23.7975
+cap "VGND" "ua[0]" 0.177924
+cap "VPWR" "w_17986_11730#" 0.570323
+cap "VPWR" "w_27370_4530#" 0.0567937
+cap "ua[7]" "VPWR" 13.3698
+cap "VGND" "w_27370_4530#" 0.0293907
+cap "ua[3]" "w_17986_11730#" 0.183437
+cap "VPWR" "w_28000_4510#" 1.25129
+cap "rst_n" "ui_in[0]" 23.7975
+cap "VGND" "w_28000_4510#" 0.64704
+cap "VPWR" "w_27410_4530#" 0.789402
+cap "w_27410_4530#" "VGND" 0.413452
+cap "VPWR" "w_15706_11730#" 0.0225625
+cap "uo_out[4]" "uo_out[3]" 23.7975
+cap "w_28490_4530#" "VGND" 0.0293907
+cap "ua[1]" "ua[4]" 153.662
+cap "uo_out[0]" "uio_in[7]" 23.7975
+cap "w_15706_11730#" "VGND" 0.0239801
+cap "w_26290_4530#" "VPWR" 0.789402
+cap "w_25830_4510#" "VPWR" 0.21592
+cap "uio_in[6]" "uio_in[5]" 23.7975
+cap "w_25830_4510#" "VGND" 0.121568
+cap "uio_in[4]" "uio_in[3]" 23.7975
+cap "w_26290_4530#" "VGND" 0.413452
+cap "uio_in[3]" "uio_in[2]" 23.7975
+cap "VPWR" "w_16336_11710#" 0.496896
+cap "w_16336_11710#" "VGND" 0.527613
+cap "ui_in[7]" "ui_in[6]" 23.7975
+cap "w_25830_4510#" "ua[2]" 0.799287
+cap "VPWR" "w_17456_11710#" 0.496896
+cap "w_26290_4530#" "ua[2]" 0.275266
+cap "uio_in[0]" "uio_in[1]" 23.7975
 cap "uo_out[6]" "uo_out[5]" 23.7975
-cap "w_27370_4530#" "VPWR" 0.0567937
-cap "vco_0/a_1410_760#" "ua[1]" 11.8503
-cap "ua[2]" "vco_0/a_1410_760#" 33.3
-cap "vco_0/a_1410_760#" "ua[2]" 33.3
-cap "ua[1]" "vco_0/a_1410_760#" 27.2207
+cap "ui_in[7]" "uio_in[0]" 23.7975
+cap "w_28530_4530#" "ua[0]" 0.742879
+cap "uo_out[2]" "uo_out[1]" 23.7975
+cap "w_15746_11730#" "VPWR" 0.314153
+cap "VPWR" "w_26250_4530#" 0.0567937
+cap "VPWR" "ua[1]" 721.798
+cap "w_15746_11730#" "VGND" 0.336511
+cap "VPWR" "w_15286_11710#" 0.086851
+cap "w_26250_4530#" "VGND" 0.0293907
+cap "ua[1]" "VGND" 810.577
+cap "VGND" "w_15286_11710#" 0.0975052
+cap "ua[3]" "ua[1]" 111.405
+cap "VPWR" "ua[4]" 196.846
+cap "uo_out[4]" "uo_out[5]" 23.7975
+cap "w_26250_4530#" "ua[2]" 0.02046
+cap "VGND" "ua[4]" 526.225
+cap "ua[1]" "ua[2]" 716.324
+cap "ua[3]" "ua[4]" 134.442
+cap "VPWR" "w_17946_11730#" 0.0225625
+cap "ua[3]" "w_17946_11730#" 0.0111847
+cap "VPWR" "w_16866_11730#" 0.314153
+cap "uio_in[1]" "uio_in[2]" 23.7975
+cap "ua[1]" "ua[5]" 119.003
+cap "ui_in[3]" "ui_in[4]" 23.7975
+cap "ua[4]" "ua[5]" 843.776
+cap "uo_out[7]" "VGND" 23.7975
+cap "ui_in[3]" "ui_in[2]" 23.7975
+cap "VPWR" "VGND" 1140.07
+cap "VPWR" "ua[3]" 815.628
+cap "ui_in[1]" "ui_in[0]" 23.7975
+cap "ua[3]" "VGND" 937.195
+cap "ua[1]" "w_28530_4530#" 1.72444
+cap "VPWR" "ua[2]" 673.153
+cap "ui_in[5]" "ui_in[6]" 23.7975
+cap "uo_out[6]" "uo_out[7]" 23.7975
+cap "ua[2]" "VGND" 1490.56
+cap "ui_in[1]" "ui_in[2]" 23.7975
+cap "ua[3]" "ua[2]" 435.598
+cap "uio_in[5]" "uio_in[4]" 23.7975
+cap "VPWR" "ua[5]" 399.917
+cap "VGND" "ua[5]" 751.717
+cap "ua[3]" "ua[5]" 17.4967
+cap "VPWR" "w_26880_4510#" 1.25129
+cap "VGND" "w_26880_4510#" 0.64704
+cap "uo_out[0]" "uo_out[1]" 23.7975
+cap "uo_out[3]" "uo_out[2]" 23.7975
+cap "ua[1]" "ua[0]" 408.216
+cap "vco_0/a_1410_760#" "ua[1]" 12.7845
+cap "ua[1]" "vco_0/a_1410_760#" 28.6934
+cap "ua[2]" "vco_0/a_1410_760#" 66.6
+cap "ua[1]" "vco_0/a_1410_760#" 78.4994
 cap "vco_0/a_1410_760#" "ua[1]" 16.8913
-cap "VGND" "vco_0/w_120_920#" 1.11022e-16
-cap "vco_0/VCONT+" "VGND" -14.5209
-cap "vco_0/VCONT+" "vco_0/a_1410_760#" 74
+cap "vco_0/VPWR" "VGND" 2.22045e-16
 cap "VGND" "vco_0/a_290_760#" 0.0732307
-cap "vco_0/w_120_920#" "vco_0/VGND" 1.80369
-cap "vco_0/VGND" "vco_0/VCONT+" 3.02356
-cap "vco_0/dw_380_630#" "vco_0/VGND" -0.121568
-cap "vco_0/VGND" "vco_0/a_1410_760#" 1510.73
-cap "vco_0/OUT" "vco_0/VGND" 2.77806
-cap "vco_0/VGND" "vco_0/VCONT-" 0.850791
-cap "vco_0/VGND" "vco_0/a_290_760#" 8.34086
-cap "vco_0/VGND" "vco_0/a_850_760#" 0.785368
-cap "vco_0/a_1410_760#" "vco_0/VCONT+" 74
+cap "vco_0/a_290_760#" "VGND" 8.31732
+cap "vco_0/VPWR" "VGND" 1.60283
+cap "vco_0/VGND" "VGND" 1.96045
+cap "vco_0/OUT" "VGND" 2.55205
+cap "vco_0/a_850_760#" "VGND" 0.641692
+cap "vco_0/VCONT-" "VGND" 0.790639
+cap "vco_0/a_1410_760#" "vco_0/VCONT+" 148
+cap "vco_0/a_1410_760#" "VGND" 1362.73
+cap "vco_0/VCONT+" "VGND" -11.7508
+cap "vco_0/dw_380_630#" "VGND" -0.121568
+cap "vco_0/VCONT+" "vco_0/VGND" 5.02859
+cap "vco_0/VCONT-" "vco_0/VGND" 1.2847
+cap "vco_0/VCONT-" "vco_0/a_1410_760#" 10.4565
+cap "vco_0/dw_2550_630#" "vco_0/VGND" -0.294109
+cap "vco_0/VGND" "vco_0/OUT" 3.22228
+cap "vco_0/VGND" "vco_0/a_1970_760#" 1.03838
+cap "vco_0/VGND" "vco_0/a_2530_760#" 0.370256
+cap "vco_0/VGND" "vco_0/a_290_760#" 0.0758461
 cap "vco_0/dw_1430_630#" "vco_0/VGND" -0.64704
-cap "vco_0/a_1410_760#" "vco_0/VGND" 2214.93
-cap "vco_0/a_1970_760#" "vco_0/VGND" 1.03838
-cap "vco_0/a_1410_760#" "vco_0/VCONT-" 10.4565
-cap "vco_0/VCONT+" "vco_0/VGND" 5.1741
-cap "vco_0/OUT" "vco_0/VGND" 3.17336
-cap "vco_0/VPWR" "vco_0/VGND" 1.67677
-cap "vco_0/VGND" "vco_0/a_850_760#" 0.253009
-cap "vco_0/VGND" "vco_0/dw_2550_630#" -0.64704
-cap "vco_0/VGND" "vco_0/VCONT-" 1.28944
-cap "vco_0/w_120_920#" "vco_0/VGND" 1.91085
-cap "vco_0/a_290_760#" "vco_0/VGND" 0.0523076
-cap "vco_0/a_1410_760#" "vco_0/VCONT-" 10.4565
-cap "vco_0/a_1410_760#" "vco_0/VGND" -97.192
-cap "vco_0/w_120_920#" "vco_0/VGND" -0.134105
-cap "vco_0/OUT" "vco_0/VGND" -0.0305082
-cap "vco_0/VCONT-" "vco_0/VGND" 101.693
-cap "vco_0/VPWR" "vco_0/VGND" 0.240385
+cap "vco_0/VGND" "vco_0/VPWR" 2.09222
+cap "vco_0/VGND" "vco_0/a_850_760#" 0.396685
+cap "vco_0/a_1410_760#" "vco_0/VGND" 2409.77
+cap "vco_0/VGND" "vco_0/OUT" 0.483815
+cap "vco_0/VCONT-" "vco_0/VGND" 101.758
+cap "vco_0/dw_2550_630#" "vco_0/VGND" -0.352931
+cap "vco_0/VCONT-" "vco_0/a_1410_760#" 10.4565
+cap "vco_0/VGND" "vco_0/a_1410_760#" -26.6033
+cap "vco_0/VGND" "vco_0/a_2530_760#" 6.83536
+cap "vco_0/VGND" "vco_0/VCONT+" 0.39897
+cap "vco_0/VGND" "vco_0/VPWR" -0.11461
+cap "vco_0/VGND" "vco_0/VCONT+" 1.72502
+cap "vco_0/VPWR" "vco_0/a_290_760#" 32.7379
+cap "vco_0/a_290_760#" "vco_0/VCONT+" 11.5939
+cap "vco_0/VPWR" "vco_0/VCONT+" -1.77636e-15
+cap "vco_0/VPWR" "vco_0/VGND" 4.20966
 cap "vco_0/a_290_760#" "VGND" 0.115129
-cap "vco_0/VCONT+" "vco_0/dw_1430_630#" -0.0399827
-cap "vco_0/VCONT+" "vco_0/a_290_760#" 20.2012
-cap "vco_0/VCONT+" "vco_0/VGND" 2.76873
-cap "vco_0/VCONT+" "vco_0/VGND" 3.81183
-cap "vco_0/a_290_760#" "vco_0/w_120_920#" 40.104
-cap "vco_0/VGND" "vco_0/w_120_920#" 5.35775
-cap "vco_0/VCONT+" "vco_0/a_1410_760#" 2.64286
-cap "vco_0/VCONT+" "vco_0/dw_380_630#" -0.133922
-cap "vco_0/a_290_760#" "vco_0/VCONT+" 2.1073
-cap "vco_0/w_120_920#" "vco_0/VCONT+" -21.1457
-cap "vco_0/dw_380_630#" "vco_0/VCONT+" -0.523521
-cap "vco_0/a_290_760#" "vco_0/w_120_920#" 30.9374
-cap "vco_0/VGND" "vco_0/VCONT+" 100.337
-cap "vco_0/VGND" "vco_0/a_290_760#" 9.2922
-cap "vco_0/dw_380_630#" "vco_0/w_120_920#" -0.21592
-cap "vco_0/a_1410_760#" "vco_0/VCONT+" -10.8335
+cap "vco_0/VPWR" "vco_0/dw_380_630#" -0.21592
+cap "vco_0/VCONT+" "vco_0/dw_1430_630#" -0.0865422
+cap "VGND" "vco_0/a_290_760#" 9.2922
+cap "vco_0/VCONT+" "vco_0/VGND" 3.29656
+cap "VGND" "vco_0/VCONT+" 9.05799
+cap "vco_0/VCONT+" "vco_0/VGND" 94.3431
+cap "vco_0/VPWR" "vco_0/VGND" 4.30299
+cap "VGND" "vco_0/VPWR" -1.6111
+cap "vco_0/VGND" "vco_0/VPWR" -0.846196
+cap "vco_0/VGND" "vco_0/a_1410_760#" -0.653569
+cap "vco_0/VCONT+" "vco_0/a_290_760#" 10.7147
+cap "vco_0/a_290_760#" "vco_0/VPWR" 38.3034
 cap "vco_0/a_290_760#" "vco_0/a_1410_760#" -1.24533
-cap "vco_0/VGND" "vco_0/w_120_920#" 0.504271
-cap "vco_0/VCONT-" "vco_0/w_120_920#" 4.61821
-cap "vco_0/VGND" "vco_0/a_1410_760#" -0.762497
-cap "vco_0/VGND" "vco_0/VCONT+" 15.0536
-cap "vco_0/a_1410_760#" "vco_0/VCONT+" -23.6439
-cap "vco_0/VCONT-" "vco_0/VCONT+" 0.335071
-cap "vco_0/VPWR" "vco_0/VGND" 1.56395
-cap "vco_0/a_1410_760#" "vco_0/VGND" 6.45513
-cap "vco_0/a_1410_760#" "vco_0/VPWR" -0.0886771
+cap "vco_0/VCONT+" "vco_0/VPWR" -21.1457
+cap "vco_0/VPWR" "vco_0/VCONT-" 4.61821
+cap "VGND" "vco_0/VGND" 1.21516
+cap "vco_0/VCONT+" "vco_0/a_1410_760#" -6.6933
+cap "vco_0/VCONT+" "vco_0/dw_380_630#" -0.799287
 cap "vco_0/VCONT-" "vco_0/VGND" 9.2391
-cap "vco_0/VCONT-" "vco_0/VPWR" -1.36534
 cap "vco_0/VCONT-" "vco_0/a_1410_760#" 1.07246
-cap "vco_0/OUT" "vco_0/VGND" 5.08935
-cap "vco_0/w_120_920#" "vco_0/VGND" -3.67592
-cap "vco_0/w_120_920#" "vco_0/VPWR" -3.28276
+cap "vco_0/VGND" "vco_0/a_2530_760#" 0.0920999
+cap "vco_0/a_1410_760#" "vco_0/a_2530_760#" -0.0886771
+cap "vco_0/VGND" "vco_0/OUT" 5.08935
 cap "vco_0/a_1410_760#" "vco_0/OUT" 0.0278713
-cap "vco_0/w_120_920#" "vco_0/dw_1430_630#" -1.25129
-cap "vco_0/w_120_920#" "vco_0/dw_2550_630#" -1.25129
-cap "vco_0/VCONT-" "vco_0/w_120_920#" -6.46723
-cap "vco_0/VGND" "vco_0/VCONT-" 40.9527
-cap "vco_0/VGND" "vco_0/OUT" 9.77522
+cap "vco_0/dw_2550_630#" "vco_0/VPWR" -0.568768
+cap "vco_0/a_1410_760#" "vco_0/VGND" 6.3462
+cap "vco_0/VCONT+" "vco_0/VGND" 16.0556
+cap "vco_0/VCONT+" "vco_0/a_1410_760#" -25.1413
+cap "vco_0/VPWR" "vco_0/VGND" -3.67592
+cap "vco_0/dw_1430_630#" "vco_0/VPWR" -1.25129
+cap "vco_0/VCONT+" "vco_0/VCONT-" 1.97988
+cap "vco_0/VCONT-" "vco_0/a_2530_760#" 184.171
+cap "vco_0/OUT" "vco_0/a_1410_760#" 0.0863839
+cap "vco_0/VGND" "vco_0/VCONT-" 38.2166
+cap "vco_0/VPWR" "vco_0/VCONT-" 186.988
+cap "vco_0/VGND" "vco_0/VCONT+" -0.223785
+cap "vco_0/VGND" "vco_0/a_2530_760#" 9.03661
+cap "vco_0/VPWR" "vco_0/a_2530_760#" -45.9949
+cap "vco_0/OUT" "vco_0/VCONT-" 6.46555
+cap "vco_0/VGND" "vco_0/VPWR" -1.94871
+cap "vco_0/VCONT+" "vco_0/OUT" 0.0766216
+cap "vco_0/OUT" "vco_0/a_2530_760#" 36.1101
 cap "vco_0/a_1970_760#" "vco_0/OUT" 0.3426
-cap "vco_0/w_120_920#" "vco_0/VPWR" -42.7122
+cap "vco_0/dw_2550_630#" "vco_0/VCONT-" -0.999488
+cap "vco_0/VGND" "vco_0/OUT" 9.77522
+cap "vco_0/VPWR" "vco_0/OUT" 1.41229
+cap "vco_0/dw_2550_630#" "vco_0/VPWR" -0.682522
 cap "vco_0/a_1410_760#" "vco_0/VCONT-" 1.07246
-cap "vco_0/VCONT-" "vco_0/VPWR" 185.536
-cap "vco_0/a_1410_760#" "vco_0/OUT" 0.0863839
-cap "vco_0/VCONT-" "vco_0/dw_2550_630#" -0.999488
-cap "vco_0/OUT" "vco_0/VPWR" 36.1101
-cap "vco_0/VGND" "vco_0/VPWR" 0.337333
-cap "vco_0/w_120_920#" "vco_0/VCONT-" 193.455
-cap "vco_0/w_120_920#" "vco_0/OUT" 1.41229
-cap "vco_0/VCONT-" "vco_0/OUT" 6.46555
-cap "vco_0/VCONT-" "vco_0/VCONT+" 1.64481
-cap "vco_0/OUT" "vco_0/VCONT+" 0.0766216
-cap "vco_0/VGND" "vco_0/w_120_920#" -1.75538
-merge "vco_0/VGND" "w_28530_4530#" -2342.54 -18000 -1440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1491180 -6882 0 0 0 0 0 0 0 0
+cap "pll_0/pfd_ver4_0/VCn" "ua[3]" 3.97167
+cap "pll_0/pfd_ver4_0/VN" "pll_0/pfd_ver4_0/VCp" -0.74483
+cap "pll_0/pfd_ver4_0/VP" "pll_0/pfd_ver4_0/VCp" -7.26415
+cap "pll_0/pfd_ver4_0/REF" "pll_0/pfd_ver4_0/VCp" 374.245
+cap "pll_0/pfd_ver4_0/REF" "pll_0/pfd_ver4_0/VN" 30.5604
+cap "pll_0/pfd_ver4_0/VCp" "pll_0/pfd_ver4_0/REF" 0.109667
+cap "pll_0/pfd_ver4_0/VCp" "pll_0/pfd_ver4_0/VCn" -1.74603
+cap "pll_0/pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" "pll_0/pfd_ver4_0/VCn" 1.68414
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/XM2/a_15_n14#" 5.60079
+cap "ua[3]" "pll_0/pfd_ver4_0/VCn" 7.69517
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/VCp" -1.74603
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/VP" -0.0235441
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/XM2/a_n33_n102#" 1.77291
+cap "pll_0/pfd_ver4_0/FEEDBACK" "pll_0/pfd_ver4_0/VCn" 0.659915
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/a_1636_n306#" 1.25111
+cap "pll_0/pfd_ver4_0/VCn" "ua[3]" 26.537
+cap "ua[3]" "pll_0/pfd_ver4_0/sky130_fd_pr__pfet_01v8_MJZT9K_0/a_n33_40#" 0.135029
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/FEEDBACK" 0.125678
+cap "pll_0/pfd_ver4_0/XM2/a_n33_n102#" "pll_0/pfd_ver4_0/REF" 3.92399
+cap "pll_0/pfd_ver4_0/XM2/a_n73_n14#" "pll_0/pfd_ver4_0/REF" 0.829246
+cap "pll_0/vco_0/VGND" "pll_0/pfd_ver4_0/REF" -1.13796
+cap "pll_0/vco_0/VGND" "pll_0/pfd_ver4_0/VP" 1.52151
+cap "pll_0/pfd_ver4_0/VCp" "pll_0/pfd_ver4_0/REF" 41.9809
+cap "pll_0/pfd_ver4_0/VCp" "pll_0/pfd_ver4_0/VP" -7.26415
+cap "pll_0/pfd_ver4_0/VP" "pll_0/pfd_ver4_0/REF" 116.193
+cap "pll_0/pfd_ver4_0/VN" "pll_0/pfd_ver4_0/VCp" -3.49241
+cap "pll_0/pfd_ver4_0/VN" "pll_0/pfd_ver4_0/REF" 200.194
+cap "pll_0/pfd_ver4_0/VN" "pll_0/pfd_ver4_0/VP" -1.84651
+cap "pll_0/pfd_ver4_0/VP" "pll_0/pfd_ver4_0/VCp" 2.03858
+cap "pll_0/pfd_ver4_0/VN" "pll_0/pfd_ver4_0/XM5/a_n73_n45#" -0.0282647
+cap "pll_0/pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" "pll_0/pfd_ver4_0/REF" 0.00938885
+cap "pll_0/pfd_ver4_0/VN" "pll_0/pfd_ver4_0/REF" 0.09553
+cap "pll_0/pfd_ver4_0/XM2/a_n33_n102#" "pll_0/pfd_ver4_0/VCp" 3.1228
+cap "pll_0/vco_0/a_1410_760#" "pll_0/pfd_ver4_0/VCp" 0.49789
+cap "pll_0/pfd_ver4_0/XM2/a_n73_n14#" "pll_0/pfd_ver4_0/REF" 0.231236
+cap "pll_0/pfd_ver4_0/REF" "pll_0/pfd_ver4_0/XM5/a_n73_n45#" 0.6534
+cap "pll_0/pfd_ver4_0/VN" "pll_0/pfd_ver4_0/FEEDBACK" 0.00822883
+cap "pll_0/pfd_ver4_0/VCp" "pll_0/pfd_ver4_0/XM20/a_n73_n76#" 0.451262
+cap "pll_0/pfd_ver4_0/a_1636_n306#" "pll_0/pfd_ver4_0/VCp" 0.321152
+cap "pll_0/pfd_ver4_0/XM2/a_n33_n102#" "pll_0/pfd_ver4_0/XM2/a_15_n14#" 1.13687e-13
+cap "ua[3]" "pll_0/pfd_ver4_0/XM2/a_n33_n102#" 1.32995
+cap "pll_0/pfd_ver4_0/VP" "pll_0/pfd_ver4_0/XM16/a_n15_n71#" -0.188645
+cap "ua[3]" "pll_0/pfd_ver4_0/VP" 0.565257
+cap "pll_0/pfd_ver4_0/VP" "pll_0/pfd_ver4_0/XM2/a_15_n14#" -0.090149
+cap "pll_0/pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" "pll_0/pfd_ver4_0/XM2/a_15_n14#" -5.68434e-14
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/FEEDBACK" 5.81446
+cap "pll_0/pfd_ver4_0/FEEDBACK" "pll_0/vco_0/VGND" 3.97609
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/vco_0/a_1410_760#" 0.449707
+cap "pll_0/pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" "pll_0/pfd_ver4_0/FEEDBACK" 1.02133
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" -0.247191
+cap "pll_0/pfd_ver4_0/FEEDBACK" "pll_0/pfd_ver4_0/XM16/a_n15_n71#" 13.6413
+cap "pll_0/pfd_ver4_0/FEEDBACK" "pll_0/pfd_ver4_0/XM2/a_15_n14#" 11.0996
+cap "ua[3]" "pll_0/pfd_ver4_0/FEEDBACK" 0.0365756
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/XM16/a_n15_n71#" -0.608997
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/XM2/a_15_n14#" -0.348197
+cap "pll_0/pfd_ver4_0/FEEDBACK" "pll_0/pfd_ver4_0/a_1636_n306#" 0.410204
+cap "pll_0/pfd_ver4_0/FEEDBACK" "pll_0/pfd_ver4_0/XM2/a_n33_n102#" 0.248109
+cap "pll_0/pfd_ver4_0/VP" "pll_0/pfd_ver4_0/FEEDBACK" 26.5996
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/XM2/a_n33_n102#" 3.06166
+cap "pll_0/pfd_ver4_0/XM2/a_15_n14#" "pll_0/pfd_ver4_0/XM16/a_n15_n71#" 2.84217e-14
+cap "ua[3]" "pll_0/pfd_ver4_0/XM16/a_n15_n71#" 0.134865
+cap "pll_0/pfd_ver4_0/FEEDBACK" "pll_0/pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" 2.64853
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" 0.618928
+cap "pll_0/pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" "pll_0/pfd_ver4_0/VP" -0.0243914
+cap "ua[3]" "pll_0/pfd_ver4_0/XM9/a_n73_n45#" 1.04129
+cap "ua[3]" "pll_0/pfd_ver4_0/FEEDBACK" 1.00948
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/VP" -0.73453
+cap "ua[3]" "pll_0/pfd_ver4_0/VP" 5.27884
+cap "ua[3]" "pll_0/pfd_ver4_0/sky130_fd_pr__pfet_01v8_MJZT9K_0/a_n33_40#" 1.33599
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/XM8/a_15_n45#" -0.247191
+cap "ua[3]" "pll_0/pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" 0.103744
+cap "ua[3]" "pll_0/pfd_ver4_0/VCn" 37.1094
+cap "ua[3]" "pll_0/pfd_ver4_0/XM13/a_15_n45#" 0.03791
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/XM16/a_n15_n71#" -0.608997
+cap "pll_0/pfd_ver4_0/VCn" "pll_0/pfd_ver4_0/FEEDBACK" 350.318
+cap "ua[3]" "pll_0/pfd_ver4_0/XM16/a_n15_n71#" 1.16777
+cap "pll_0/pfd_ver4_0/REF" "pll_0/vco_0/VGND" -1.13205
+cap "pll_0/vco_0/VCON+" "pll_0/vco_0/VGND" 2.14249
+cap "pll_0/vco_0/VCON-" "pll_0/vco_0/VGND" 112.92
+cap "pll_0/pfd_ver4_0/VN" "pll_0/vco_0/VGND" 136.3
+cap "pll_0/vco_0/a_290_760#" "pll_0/vco_0/VGND" 1.61831
+cap "pll_0/pfd_ver4_0/VP" "pll_0/vco_0/VGND" 101.206
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/dw_380_630#" -0.0975052
+cap "pll_0/vco_0/OUT_VCO" "pll_0/vco_0/VGND" 3.18032
+cap "pll_0/vco_0/a_1410_760#" "pll_0/vco_0/VGND" 138.93
+cap "pll_0/pfd_ver4_0/XM2/a_n73_n14#" "pll_0/vco_0/VGND" 0.0802204
+cap "pll_0/vco_0/VGND" "pll_0/pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" 0.970468
+cap "pll_0/vco_0/a_850_760#" "pll_0/vco_0/VGND" 2.67188
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/OUT_VCO" 6.80374
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/VCON+" 6.31805
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/VCON-" 2.27928
+cap "pll_0/vco_0/VGND" "pll_0/pfd_ver4_0/REF" 0.10691
+cap "pll_0/vco_0/dw_1430_630#" "pll_0/vco_0/VGND" -0.527613
+cap "pll_0/vco_0/VGND" "pll_0/pfd_ver4_0/XM20/a_n73_n76#" 0.40188
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/VPWR" 17.167
+cap "pll_0/vco_0/VGND" "pll_0/pfd_ver4_0/XM2/a_n73_n14#" 0.644993
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/a_290_760#" 1.91025
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/a_1410_760#" 1076.29
+cap "pll_0/vco_0/VGND" "pll_0/pfd_ver4_0/XM5/a_n73_n45#" 0.859099
+cap "pll_0/pfd_ver4_0/FEEDBACK" "pll_0/vco_0/VGND" 3.34708
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/OUT_VCO" 35.9627
+cap "pll_0/pfd_ver4_0/VP" "pll_0/vco_0/VGND" -0.158891
+cap "pll_0/vco_0/OUT_VCO" "pll_0/vco_0/VGND" 27.5207
+cap "pll_0/vco_0/OUT_VCO" "pll_0/vco_0/VCON+" 43.2942
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/VGND" 0.26164
+cap "pll_0/vco_0/a_290_760#" "pll_0/vco_0/VGND" 0.320305
+cap "pll_0/vco_0/VCON-" "pll_0/vco_0/a_290_760#" -74.2121
+cap "pll_0/vco_0/VCON-" "VPWR" 108.495
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/VCON+" 0.733352
+cap "pll_0/vco_0/VCON-" "pll_0/vco_0/VGND" 0.348091
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/a_290_760#" -0.503977
+cap "pll_0/vco_0/VPWR" "VPWR" 0.505712
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/VGND" 0.503834
+cap "pll_0/vco_0/VGND" "VPWR" 0.384942
+cap "pll_0/vco_0/a_290_760#" "VPWR" 0.158784
+cap "pll_0/vco_0/a_1410_760#" "VPWR" 5.26321
+cap "pll_0/vco_0/VCON-" "VPWR" 117.491
+cap "pll_0/vco_0/a_2530_760#" "pll_0/vco_0/VPWR" -0.251988
+cap "pll_0/vco_0/a_1410_760#" "pll_0/vco_0/OUT_VCO" 0.00783144
+cap "pll_0/vco_0/a_290_760#" "VPWR" 0.868271
+cap "pll_0/vco_0/a_1410_760#" "pll_0/vco_0/VGND" -0.0537827
+cap "pll_0/vco_0/a_290_760#" "pll_0/vco_0/VPWR" -1.00795
+cap "pll_0/vco_0/a_1410_760#" "pll_0/vco_0/a_2530_760#" -0.48967
+cap "pll_0/vco_0/VCON-" "pll_0/vco_0/VGND" -12.2853
+cap "pll_0/vco_0/a_2530_760#" "pll_0/vco_0/VCON-" -8.46851
+cap "pll_0/vco_0/VPWR" "VPWR" 1.26428
+cap "pll_0/vco_0/a_1410_760#" "pll_0/vco_0/a_290_760#" -0.0642496
+cap "pll_0/vco_0/a_290_760#" "pll_0/vco_0/VCON-" -60.9431
+cap "pll_0/vco_0/OUT_VCO" "pll_0/vco_0/VGND" 17.7752
+cap "pll_0/vco_0/VCON+" "pll_0/vco_0/VGND" 1.13687e-13
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/VGND" 4.83484
+cap "pll_0/vco_0/a_2530_760#" "pll_0/vco_0/VCON-" -47.1634
+cap "pll_0/vco_0/a_2530_760#" "pll_0/vco_0/a_1410_760#" -0.105491
+cap "pll_0/vco_0/a_2530_760#" "pll_0/vco_0/OUT_VCO" 6.19073
+cap "pll_0/vco_0/VCON+" "pll_0/vco_0/OUT_VCO" 0.0374136
+cap "pll_0/vco_0/a_2530_760#" "pll_0/vco_0/VPWR" -8.32904
+cap "pll_0/vco_0/a_1410_760#" "pll_0/vco_0/VPWR" 0.147926
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/VCON-" 64.4544
+cap "pll_0/vco_0/VCON+" "pll_0/vco_0/VPWR" 1.05366
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/OUT_VCO" 14.2095
+cap "pll_0/vco_0/a_2530_760#" "pll_0/vco_0/OUT_VCO" 7.41721
+cap "pll_0/vco_0/VGND" "pll_0/vco_0/OUT_VCO" 14.1735
+cap "pll_0/vco_0/VCON+" "pll_0/vco_0/VPWR" 1.3212
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/VCON-" 1.79868
+cap "pll_0/vco_0/a_2530_760#" "pll_0/vco_0/VPWR" 54.6124
+cap "pll_0/vco_0/a_2530_760#" "pll_0/vco_0/VCON+" -1.89563
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/VGND" 1.11832
+cap "pll_0/vco_0/VCON+" "pll_0/vco_0/OUT_VCO" 52.2071
+cap "pll_0/vco_0/a_290_760#" "VPWR" 340.508
+cap "pll_0/vco_0/VCON-" "VPWR" 105.502
+cap "VPWR" "pll_0/vco_0/dw_380_630#" -0.086851
+cap "VPWR" "pll_0/vco_0/dw_1430_630#" -0.496896
+cap "pll_0/vco_0/a_290_760#" "VPWR" 274.952
+cap "VPWR" "pll_0/vco_0/VCON-" 114.498
+cap "VPWR" "pll_0/vco_0/VGND" 37.6601
+cap "pll_0/vco_0/a_2530_760#" "VPWR" 55.6258
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/VCON-" 58.5576
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/a_2530_760#" 380.281
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/VGND" 5.64426
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/dw_2550_630#" -0.496896
+cap "pll_0/vco_0/VPWR" "pll_0/vco_0/a_2530_760#" 132.461
+merge "pll_0/vco_0/VGND" "w_17986_11730#" -8500.06 -36000 -2880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2123380 -9062 0 0 -4699150 -22850 0 0 0 0
+merge "w_17986_11730#" "w_17946_11730#"
+merge "w_17946_11730#" "pll_0/pfd_ver4_0/VN"
+merge "pll_0/pfd_ver4_0/VN" "w_16866_11730#"
+merge "w_16866_11730#" "w_16826_11730#"
+merge "w_16826_11730#" "w_15746_11730#"
+merge "w_15746_11730#" "w_15706_11730#"
+merge "w_15706_11730#" "pll_0/VSUBS"
+merge "pll_0/VSUBS" "vco_0/VGND"
+merge "vco_0/VGND" "w_28530_4530#"
 merge "w_28530_4530#" "w_28490_4530#"
 merge "w_28490_4530#" "w_27410_4530#"
 merge "w_27410_4530#" "w_27370_4530#"
@@ -278,10 +488,19 @@ merge "w_27370_4530#" "w_26290_4530#"
 merge "w_26290_4530#" "w_26250_4530#"
 merge "w_26250_4530#" "VGND"
 merge "VGND" "VSUBS"
+merge "pll_0/vco_0/dw_380_630#" "w_15286_11710#" 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "vco_0/dw_1430_630#" "w_26880_4510#" 0 -8800 -380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "vco_0/dw_2550_630#" "w_28000_4510#" 0 -8800 -380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pll_0/vco_0/VPWR" "vco_0/VPWR" -6695.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1122482 -20648 -1122000 -6500 0 0 0 0 0 0 0 0
+merge "vco_0/VPWR" "VPWR"
 merge "vco_0/dw_380_630#" "w_25830_4510#" 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "vco_0/OUT" "ua[0]" -227.128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23000 -660 -1760 -182 0 0 0 0 0 0 0 0
-merge "vco_0/w_120_920#" "VPWR" -1634.57 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -271280 -7022 0 0 0 0 0 0 0 0 0 0
-merge "vco_0/VCONT+" "ua[2]" -915.617 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11200 -440 0 0 -238000 -2800 0 0 0 0 0 0
-merge "vco_0/VCONT-" "ua[1]" -268.982 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 -180 0 0 0 0 0 0 0 0 0 0
+merge "vco_0/OUT" "ua[0]" -267.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -23000 -660 -16160 -362 0 0 0 0 0 0 0 0
+merge "pll_0/vco_0/OUT_VCO" "ua[3]" -303.782 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12600 -452 0 0 0 0 0 0 0 0 0 0
+merge "pll_0/pfd_ver4_0/VCp" "ua[5]" -185.29 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18600 -740 0 0 0 0 0 0 0 0 0 0
+merge "pll_0/pfd_ver4_0/VCn" "ua[4]" -183.169 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14000 -660 0 0 0 0 0 0 0 0 0 0
+merge "pll_0/pfd_ver4_0/FEEDBACK" "vco_0/VCONT+" -1526.24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -51992 -1264 -35297 -1549 -238000 -2800 0 0 0 0 0 0
+merge "vco_0/VCONT+" "ua[2]"
+merge "pll_0/vco_0/dw_2550_630#" "w_17456_11710#" 0 -8800 -380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pll_0/pfd_ver4_0/REF" "vco_0/VCONT-" -1166.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40800 -980 -150200 -1702 0 0 0 0 0 0 0 0
+merge "vco_0/VCONT-" "ua[1]"
+merge "pll_0/vco_0/dw_1430_630#" "w_16336_11710#" 0 -8800 -380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

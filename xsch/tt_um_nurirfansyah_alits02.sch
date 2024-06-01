@@ -69,6 +69,32 @@ N -150 -50 -100 -50 {
 lab=ua[1]}
 N -150 -30 -100 -30 {
 lab=ua[2]}
+N -130 -70 -130 150 {
+lab=VPWR}
+N -130 150 -100 150 {
+lab=VPWR}
+N -120 -10 -120 170 {
+lab=VGND}
+N -120 170 -100 170 {
+lab=VGND}
+N -100 150 -20 150 {
+lab=VPWR}
+N -100 170 -20 170 {
+lab=VGND}
+N -110 -50 -110 190 {
+lab=ua[1]}
+N -110 190 -20 190 {
+lab=ua[1]}
+N -140 -30 -140 210 {
+lab=ua[2]}
+N 280 170 300 170 {
+lab=ua[5]}
+N 280 190 300 190 {
+lab=ua[3]}
+N 280 150 300 150 {
+lab=ua[4]}
+N -140 210 -20 210 {
+lab=ua[2]}
 C {devices/ipin.sym} -660 -200 0 0 {name=p0 lab=clk}
 C {devices/ipin.sym} -660 -180 0 0 {name=p1 lab=ena}
 C {devices/ipin.sym} -660 -160 0 0 {name=p2 lab=rst_n}
@@ -110,7 +136,6 @@ C {devices/opin.sym} -490 100 0 0 {name=p42 lab=uo_out[7]}
 C {devices/noconn.sym} -660 -200 0 1 {name=l1}
 C {devices/noconn.sym} -660 -180 0 1 {name=l2}
 C {devices/noconn.sym} -660 -160 0 1 {name=l3}
-C {devices/noconn.sym} -660 -80 0 1 {name=l7}
 C {devices/noconn.sym} -660 -20 0 1 {name=l8}
 C {devices/noconn.sym} -660 40 0 1 {name=l26}
 C {devices/noconn.sym} -660 60 0 1 {name=l27}
@@ -135,8 +160,6 @@ C {devices/iopin.sym} -480 220 0 0 {name=p49 lab=uio_out[4]}
 C {devices/iopin.sym} -480 240 0 0 {name=p50 lab=uio_out[5]}
 C {devices/iopin.sym} -480 260 0 0 {name=p51 lab=uio_out[6]}
 C {devices/iopin.sym} -480 280 0 0 {name=p52 lab=uio_out[7]}
-C {devices/noconn.sym} -660 -40 0 1 {name=l17}
-C {devices/noconn.sym} -660 -60 0 1 {name=l18}
 C {devices/noconn.sym} -660 0 0 1 {name=l4}
 C {devices/ipin.sym} -660 -100 0 0 {name=p3 lab=ua[2]}
 C {devices/ipin.sym} -660 -120 0 0 {name=p4 lab=ua[1]}
@@ -175,3 +198,7 @@ C {devices/noconn.sym} -540 -20 0 0 {name=l16}
 C {devices/noconn.sym} -540 0 0 0 {name=l19}
 C {devices/noconn.sym} -540 20 0 0 {name=l20}
 C {devices/noconn.sym} -540 40 0 0 {name=l21}
+C {dsrt_pll/pll.sym} 130 180 0 0 {name=x2}
+C {devices/lab_pin.sym} 300 150 0 1 {name=p53 sig_type=std_logic lab=ua[4]}
+C {devices/lab_pin.sym} 300 170 0 1 {name=p54 sig_type=std_logic lab=ua[5]}
+C {devices/lab_pin.sym} 300 190 0 1 {name=p55 sig_type=std_logic lab=ua[3]}

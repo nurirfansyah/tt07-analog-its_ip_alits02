@@ -1,0 +1,227 @@
+timestamp 1717268110
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use vcopll vco_0 1 0 516 0 1 1634
+use pfd_ver4 pfd_ver4_0 1 0 350 0 1 -502
+node "m1_2216_n1596#" 6 3526 2216 -1596 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1153564 12268 73872 2196 0 0 0 0 0 0 0 0
+node "m1_700_2156#" 3 1715.41 700 2156 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56904 1312 717492 7288 0 0 0 0 0 0 0 0
+node "m1_288_1902#" 3 1810.56 288 1902 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 776148 9484 0 0 0 0 0 0 0 0 0 0
+node "m1_n230_n1596#" 6 3750.37 -230 -1596 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1505840 17160 0 0 0 0 0 0 0 0 0 0
+node "w_3596_2284#" 18519 0 3596 2284 pw 5600 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3556_2284#" 17600 0 3556 2284 pw 400 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3066_2264#" 6050 0 3066 2264 pw 8800 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2476_2284#" 18519 0 2476 2284 pw 5600 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2436_2284#" 17600 0 2436 2284 pw 400 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1946_2264#" 6050 0 1946 2264 pw 8800 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1356_2284#" 18519 0 1356 2284 pw 5600 380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1316_2284#" 17600 0 1316 2284 pw 400 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_896_2264#" 4400 0 896 2264 pw 1600 160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_288_1902#" "w_1946_2264#" 0.0723554
+cap "m1_n230_n1596#" "m1_700_2156#" 82.3082
+cap "m1_n230_n1596#" "m1_2216_n1596#" 125.931
+cap "w_1946_2264#" "m1_700_2156#" 0.159967
+cap "m1_288_1902#" "w_896_2264#" 0.21592
+cap "w_896_2264#" "m1_700_2156#" 0.622843
+cap "w_3596_2284#" "m1_2216_n1596#" 1.07641
+cap "w_3556_2284#" "m1_2216_n1596#" 0.0766731
+cap "m1_288_1902#" "m1_700_2156#" 481.617
+cap "m1_288_1902#" "w_1316_2284#" 0.0639128
+cap "m1_2216_n1596#" "m1_700_2156#" 0.163521
+cap "m1_288_1902#" "w_1356_2284#" 0.853603
+cap "w_3066_2264#" "m1_2216_n1596#" 3.15814
+cap "w_1316_2284#" "m1_700_2156#" 0.0311913
+cap "m1_n230_n1596#" "m1_288_1902#" 977.758
+cap "w_1356_2284#" "m1_700_2156#" 0.374209
+cap "pfd_ver4_0/VN" "pfd_ver4_0/VP" 52.3126
+cap "pfd_ver4_0/XM2/a_n33_n102#" "pfd_ver4_0/VN" 44.212
+cap "pfd_ver4_0/REF" "pfd_ver4_0/VN" 240.038
+cap "pfd_ver4_0/VN" "pfd_ver4_0/VCp" 41.5625
+cap "pfd_ver4_0/XM2/a_n73_n14#" "pfd_ver4_0/VCp" 4.59978
+cap "pfd_ver4_0/XM5/a_n73_n45#" "pfd_ver4_0/VN" 3.2343
+cap "pfd_ver4_0/XM5/a_15_n45#" "pfd_ver4_0/VN" 0.568836
+cap "pfd_ver4_0/VN" "pfd_ver4_0/VCn" -0.0809166
+cap "vco_0/a_1410_760#" "pfd_ver4_0/VP" 1.14968
+cap "pfd_ver4_0/VN" "pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" 1.00705
+cap "vco_0/a_1410_760#" "pfd_ver4_0/REF" 3.18749
+cap "pfd_ver4_0/VCp" "pfd_ver4_0/VP" 2.2321
+cap "pfd_ver4_0/VN" "pfd_ver4_0/XM2/a_n73_n14#" 21.7431
+cap "pfd_ver4_0/XM2/a_n33_n102#" "pfd_ver4_0/VCp" 5.73113
+cap "pfd_ver4_0/REF" "pfd_ver4_0/VCp" 11.5417
+cap "pfd_ver4_0/XM5/a_n73_n45#" "vco_0/a_1410_760#" 2.64178
+cap "pfd_ver4_0/VCp" "pfd_ver4_0/VCn" -50.069
+cap "pfd_ver4_0/VCp" "pfd_ver4_0/VN" 84.5469
+cap "pfd_ver4_0/VCp" "pfd_ver4_0/XM20/a_n73_n76#" 0.469438
+cap "pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" "vco_0/a_1410_760#" 0.985367
+cap "pfd_ver4_0/VCn" "pfd_ver4_0/XM2/a_n33_n102#" 4.3112
+cap "pfd_ver4_0/VCp" "pfd_ver4_0/XM5/a_n73_n45#" 0.304196
+cap "pfd_ver4_0/VCn" "pfd_ver4_0/VN" 19.9097
+cap "pfd_ver4_0/VP" "vco_0/a_1410_760#" 2.55471
+cap "pfd_ver4_0/REF" "vco_0/a_1410_760#" 1.14342
+cap "pfd_ver4_0/VN" "pfd_ver4_0/XM5/a_n73_n45#" 0.624423
+cap "pfd_ver4_0/VCp" "pfd_ver4_0/VP" 1.98283
+cap "pfd_ver4_0/VCp" "pfd_ver4_0/REF" 0.0617764
+cap "pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" "vco_0/a_1410_760#" 1.76037
+cap "pfd_ver4_0/VCn" "pfd_ver4_0/VP" 0.313418
+cap "pfd_ver4_0/VN" "pfd_ver4_0/VP" 22.9555
+cap "pfd_ver4_0/VN" "pfd_ver4_0/REF" 0.830417
+cap "vco_0/a_1410_760#" "pfd_ver4_0/XM2/a_n73_n14#" 3.76594
+cap "pfd_ver4_0/a_1636_n306#" "vco_0/a_1410_760#" 0.422659
+cap "pfd_ver4_0/VN" "pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" 0.460973
+cap "pfd_ver4_0/VCp" "pfd_ver4_0/XM2/a_n73_n14#" 0.628831
+cap "pfd_ver4_0/VCp" "pfd_ver4_0/a_1636_n306#" 0.552468
+cap "pfd_ver4_0/REF" "pfd_ver4_0/VP" -0.889361
+cap "pfd_ver4_0/VCn" "pfd_ver4_0/a_1854_n306#" 0.450378
+cap "pfd_ver4_0/VN" "pfd_ver4_0/XM2/a_n73_n14#" 0.663955
+cap "pfd_ver4_0/VCp" "vco_0/a_1410_760#" 0.703292
+cap "pfd_ver4_0/XM2/a_n33_n102#" "vco_0/a_1410_760#" 3.33983
+cap "pfd_ver4_0/VCn" "vco_0/a_1410_760#" 2.15303
+cap "pfd_ver4_0/VN" "vco_0/a_1410_760#" 9.12279
+cap "pfd_ver4_0/XM20/a_n73_n76#" "vco_0/a_1410_760#" 2.54427
+cap "pfd_ver4_0/VCp" "pfd_ver4_0/XM2/a_n33_n102#" 8.85252
+cap "pfd_ver4_0/VP" "pfd_ver4_0/VCn" 7.09583
+cap "pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" "vco_0/a_1410_760#" 3.46905
+cap "pfd_ver4_0/FEEDBACK" "vco_0/VGND" 3.8042
+cap "pfd_ver4_0/XM16/a_n15_n71#" "vco_0/a_1410_760#" 0.543072
+cap "pfd_ver4_0/XM16/a_n15_n71#" "vco_0/VGND" 0.253224
+cap "pfd_ver4_0/XM2/a_15_n14#" "vco_0/a_1410_760#" 0.395922
+cap "pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" "pfd_ver4_0/VCn" 0.939426
+cap "pfd_ver4_0/XM2/a_n33_n102#" "vco_0/a_1410_760#" 4.0676
+cap "pfd_ver4_0/VCn" "pfd_ver4_0/FEEDBACK" 46.0335
+cap "pfd_ver4_0/XM16/a_n15_n71#" "pfd_ver4_0/VCn" 9.82119
+cap "pfd_ver4_0/XM2/a_15_n14#" "pfd_ver4_0/VCn" 134.204
+cap "pfd_ver4_0/XM2/a_n33_n102#" "pfd_ver4_0/VCn" 17.0949
+cap "vco_0/a_1410_760#" "pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" 1.19652
+cap "pfd_ver4_0/VP" "vco_0/a_1410_760#" 0.574842
+cap "pfd_ver4_0/VP" "vco_0/VGND" 0.140028
+cap "pfd_ver4_0/VCn" "pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" 3.95506
+cap "pfd_ver4_0/XM2/a_n73_n14#" "vco_0/a_1410_760#" 3.1906
+cap "vco_0/a_1410_760#" "pfd_ver4_0/VCp" 10.4721
+cap "vco_0/VPWR" "pfd_ver4_0/VCp" 0.455516
+cap "pfd_ver4_0/VN" "vco_0/a_1410_760#" 339.107
+cap "vco_0/a_1410_760#" "vco_0/VPWR" 116.455
+cap "pfd_ver4_0/REF" "vco_0/a_1410_760#" 1.83972
+cap "pfd_ver4_0/VN" "vco_0/VPWR" 13.5195
+cap "vco_0/a_1410_760#" "pfd_ver4_0/XM2/a_n33_n102#" 1.08661
+cap "pfd_ver4_0/VCp" "vco_0/VPWR" 0.0369174
+cap "vco_0/VGND" "pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" 0.578733
+cap "pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" "vco_0/a_1410_760#" 3.18162
+cap "vco_0/VGND" "pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" 1.43822
+cap "vco_0/a_1410_760#" "pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" 22.6787
+cap "pfd_ver4_0/a_1854_n306#" "vco_0/a_1410_760#" 3.81098
+cap "vco_0/VPWR" "vco_0/a_1410_760#" 300.879
+cap "vco_0/VGND" "vco_0/VPWR" 11.2147
+cap "pfd_ver4_0/a_1854_n306#" "vco_0/VGND" 0.571855
+cap "pfd_ver4_0/REF" "vco_0/a_1410_760#" 1.74289
+cap "pfd_ver4_0/XM2/a_n33_n102#" "vco_0/a_1410_760#" 2.51071
+cap "pfd_ver4_0/XM2/a_n73_n14#" "vco_0/a_1410_760#" 5.34234
+cap "pfd_ver4_0/XM20/a_n73_n76#" "vco_0/a_1410_760#" 5.38338
+cap "vco_0/VGND" "pfd_ver4_0/XM20/a_n73_n76#" 0.176393
+cap "pfd_ver4_0/XM5/a_15_n45#" "vco_0/a_1410_760#" 0.571506
+cap "vco_0/VGND" "vco_0/VCON+" 0.703528
+cap "vco_0/a_1410_760#" "vco_0/VCON+" 7.74717
+cap "pfd_ver4_0/VCp" "vco_0/VGND" 0.7098
+cap "pfd_ver4_0/VCp" "vco_0/a_1410_760#" 10.5202
+cap "pfd_ver4_0/a_1636_n306#" "vco_0/a_1410_760#" 2.50466
+cap "vco_0/VGND" "pfd_ver4_0/a_1636_n306#" 0.0463277
+cap "pfd_ver4_0/XM5/a_n73_n45#" "vco_0/a_1410_760#" 10.199
+cap "vco_0/VGND" "vco_0/a_1410_760#" 63.3373
+cap "vco_0/VGND" "pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" 0.671095
+cap "vco_0/a_1410_760#" "pfd_ver4_0/sky130_fd_pr__nfet_01v8_VZM9AN_0/a_n73_n45#" 5.25565
+cap "vco_0/VGND" "pfd_ver4_0/a_1636_n306#" 0.439551
+cap "vco_0/a_1410_760#" "pfd_ver4_0/a_1636_n306#" 3.50109
+cap "vco_0/a_1410_760#" "pfd_ver4_0/FEEDBACK" 0.322432
+cap "vco_0/VGND" "pfd_ver4_0/FEEDBACK" 7.52689
+cap "vco_0/a_1410_760#" "pfd_ver4_0/XM13/a_15_n45#" 0.219635
+cap "vco_0/VCON+" "pfd_ver4_0/VP" 9.94522
+cap "vco_0/a_1410_760#" "pfd_ver4_0/VP" 103.827
+cap "vco_0/VGND" "pfd_ver4_0/VP" 24.2001
+cap "pfd_ver4_0/XM16/a_n15_n71#" "vco_0/a_1410_760#" 0.736208
+cap "pfd_ver4_0/XM16/a_n15_n71#" "vco_0/VGND" 1.30816
+cap "vco_0/VCON+" "vco_0/a_1410_760#" 26.6508
+cap "vco_0/VCON+" "vco_0/VGND" 74.9982
+cap "vco_0/a_1410_760#" "vco_0/VGND" 5.63757
+cap "vco_0/a_1410_760#" "pfd_ver4_0/XM2/a_n33_n102#" 3.96125
+cap "pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" "vco_0/a_1410_760#" 9.57998
+cap "vco_0/VGND" "pfd_ver4_0/XM2/a_n33_n102#" 0.510608
+cap "pfd_ver4_0/sky130_fd_pr__nfet_01v8_9NP8AN_0/a_15_n45#" "vco_0/VGND" 2.11893
+cap "vco_0/OUT_VCO" "vco_0/VPWR" 43.7855
+cap "vco_0/VPWR" "vco_0/VCON+" 4.61336
+cap "vco_0/VPWR" "vco_0/a_1410_760#" 41.4844
+cap "vco_0/VGND" "vco_0/VPWR" 5.99234
+cap "vco_0/VPWR" "vco_0/dw_1430_630#" -0.0723554
+cap "vco_0/a_290_760#" "vco_0/VCON-" 1.29148
+cap "vco_0/VGND" "vco_0/OUT_VCO" 5.4879
+cap "vco_0/VGND" "vco_0/dw_380_630#" -0.622843
+cap "vco_0/VGND" "vco_0/VCON+" 79.1724
+cap "vco_0/VGND" "vco_0/a_1410_760#" 210.908
+cap "vco_0/VPWR" "vco_0/VCON-" 0.254593
+cap "vco_0/VGND" "vco_0/dw_1430_630#" -0.159967
+cap "vco_0/VPWR" "vco_0/VGND" 0.0747935
+cap "vco_0/OUT_VCO" "vco_0/VCON-" 0.627387
+cap "vco_0/VCON-" "vco_0/VCON+" 0.699462
+cap "vco_0/a_1410_760#" "vco_0/VCON-" 6.01963
+cap "vco_0/VGND" "vco_0/VCON-" 0.950229
+cap "vco_0/VPWR" "vco_0/a_290_760#" 4.57027
+cap "vco_0/VGND" "vco_0/VGND" 0.312142
+cap "vco_0/a_290_760#" "vco_0/VCON+" 1.42109e-14
+cap "vco_0/OUT_VCO" "vco_0/a_290_760#" -5.68434e-14
+cap "vco_0/VGND" "vco_0/a_290_760#" 3.05795
+cap "vco_0/a_1410_760#" "vco_0/VGND" -0.212672
+cap "vco_0/VCON-" "vco_0/VGND" 0.0518954
+cap "vco_0/VPWR" "vco_0/a_1410_760#" 0.516855
+cap "vco_0/VPWR" "vco_0/VGND" 4.04821
+cap "vco_0/a_1410_760#" "vco_0/VCON+" 1.46302
+cap "vco_0/OUT_VCO" "vco_0/VCON+" 13.0842
+cap "vco_0/VGND" "vco_0/a_1410_760#" -0.452414
+cap "vco_0/a_2530_760#" "vco_0/VCON+" 44.9564
+cap "vco_0/VGND" "vco_0/VPWR" -2.27653
+cap "vco_0/a_2530_760#" "vco_0/OUT_VCO" -1.13687e-13
+cap "vco_0/dw_2550_630#" "vco_0/VCON+" -3.15814
+cap "vco_0/VGND" "vco_0/VCON+" 645.34
+cap "vco_0/a_1410_760#" "vco_0/VCON+" 1.71081
+cap "vco_0/VPWR" "vco_0/VCON+" 4.71869
+cap "vco_0/VGND" "vco_0/OUT_VCO" -2.66293
+cap "vco_0/VGND" "vco_0/a_2530_760#" -5.04094
+cap "vco_0/VCON-" "vco_0/VCON+" 0.49273
+cap "vco_0/VCON+" "vco_0/a_2530_760#" 2.28776
+cap "vco_0/VGND" "vco_0/VCON-" 9.93945
+cap "vco_0/VPWR" "vco_0/dw_380_630#" -0.21592
+cap "vco_0/VGND" "vco_0/VGND" 4.77425
+cap "vco_0/VPWR" "vco_0/VCON-" -264.954
+cap "vco_0/VPWR" "vco_0/a_290_760#" 38.5573
+cap "vco_0/VPWR" "vco_0/OUT_VCO" 21.7777
+cap "vco_0/VPWR" "vco_0/VGND" -4.53093
+cap "vco_0/OUT_VCO" "vco_0/VCON-" 0.358507
+cap "vco_0/a_290_760#" "vco_0/VCON-" 105.415
+cap "vco_0/VGND" "vco_0/a_290_760#" 2.35334
+cap "vco_0/VPWR" "vco_0/VGND" 22.1705
+cap "vco_0/VPWR" "vco_0/VGND" 0.124377
+cap "vco_0/VCON-" "vco_0/VGND" 0.756103
+cap "vco_0/VPWR" "vco_0/VCON-" -119.869
+cap "vco_0/VGND" "vco_0/VCON+" 3.02074
+cap "vco_0/a_2530_760#" "vco_0/VCON+" 2.09874
+cap "vco_0/a_2530_760#" "vco_0/VGND" -0.800245
+cap "vco_0/a_2530_760#" "vco_0/VCON+" 2.54997
+cap "vco_0/VGND" "vco_0/VCON+" 3.42419
+merge "pfd_ver4_0/VN" "w_3596_2284#" -1400.48 -18000 -1440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -51544 -1260 -193856 -2266 0 0 0 0 0 0 0 0
+merge "w_3596_2284#" "w_3556_2284#"
+merge "w_3556_2284#" "w_2476_2284#"
+merge "w_2476_2284#" "w_2436_2284#"
+merge "w_2436_2284#" "w_1356_2284#"
+merge "w_1356_2284#" "w_1316_2284#"
+merge "w_1316_2284#" "m1_700_2156#"
+merge "m1_700_2156#" "vco_0/VGND"
+merge "vco_0/VGND" "VSUBS"
+merge "vco_0/dw_380_630#" "w_896_2264#" 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "vco_0/VCON-" "pfd_ver4_0/VCp" -532.681 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96960 -2384 0 0 0 0 0 0 0 0 0 0
+merge "pfd_ver4_0/VCp" "m1_n230_n1596#"
+merge "vco_0/VPWR" "pfd_ver4_0/VP" -610.246 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -113120 -2788 0 0 0 0 0 0 0 0 0 0
+merge "pfd_ver4_0/VP" "m1_288_1902#"
+merge "vco_0/dw_2550_630#" "w_3066_2264#" 0 -8800 -380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "vco_0/dw_1430_630#" "w_1946_2264#" 0 -8800 -380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "vco_0/VCON+" "pfd_ver4_0/VCn" -755.785 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -43220 -1032 0 0 0 0 0 0 0 0 0 0
+merge "pfd_ver4_0/VCn" "m1_2216_n1596#"

@@ -18,11 +18,13 @@ This tinytapeout submission consists of:
 
 Pinouts:
 
-ua[0] - VCO#1 output
+Analog pins:
 
-ua[1] - Opamp input (+) / Phase Detector ref
+ua[0] - VCO (PLL) output
 
-ua[2] - Opamp input (+) / Phase Detector input
+ua[1] - Opamp input (+) / Phase Detector (PLL) ref
+
+ua[2] - Opamp input (+) / Phase Detector (PLL) input / PLL feedback
 
 ua[3] - Opamp output
 
@@ -30,6 +32,9 @@ ua[4] - PLL Filter + / VCO#1 control input voltage (-)
 
 ua[5] - PLL Filter - / VCO#1 control input voltage (+)
 
+Digital pins:
+
+o[0] - VCO#1 output
 
 ## External hardware
 

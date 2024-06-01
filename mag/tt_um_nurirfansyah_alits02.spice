@@ -1,30 +1,28 @@
 * NGSPICE file created from tt_um_nurirfansyah_alits02.ext - technology: sky130A
 
-.subckt vco VPWR VCONT- OUT VCONT+ VGND dw_1430_630# dw_2550_630# dw_380_630#
+.subckt vco OUT w_120_920# dw_1430_630# dw_2550_630# VGND VCONT- dw_380_630# VCONT+
 X0 a_290_760# VCONT+ OUT VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
-X1 a_1970_760# a_1410_760# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
-X2 OUT a_2530_760# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X1 a_1970_760# a_1410_760# w_120_920# w_120_920# sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X2 OUT VPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
 X3 a_850_760# a_290_760# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
-X4 a_2530_760# VCONT+ a_1970_760# VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X4 VPWR VCONT+ a_1970_760# VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
 X5 a_1410_760# VCONT+ a_850_760# VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
 X6 VGND a_1410_760# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
 X7 a_1970_760# a_1410_760# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
-X8 a_290_760# VCONT- OUT VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
-X9 OUT a_2530_760# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
-X10 VGND a_2530_760# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
-X11 a_850_760# a_290_760# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
-X12 a_2530_760# VCONT- a_1970_760# VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
-X13 a_1410_760# VCONT- a_850_760# VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X8 a_290_760# VCONT- OUT w_120_920# sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X9 OUT VPWR w_120_920# w_120_920# sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X10 VGND VPWR sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X11 a_850_760# a_290_760# w_120_920# w_120_920# sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X12 VPWR VCONT- a_1970_760# w_120_920# sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X13 a_1410_760# VCONT- a_850_760# w_120_920# sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
 X14 VGND a_290_760# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
 .ends
 
 .subckt tt_um_nurirfansyah_alits02 clk ena rst_n ua[0] ua[1] ua[2] ua[3] ua[4] ua[5]
 + ua[6] ua[7] ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6] ui_in[7]
 + uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7]
-+ uio_oe[0] uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7]
-+ uio_out[0] uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7]
 + uo_out[0] uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7]
 + VPWR VGND
-Xvco_0 VPWR ua[1] ua[0] ua[2] VGND w_26880_4510# w_28000_4510# w_25830_4510# vco
+Xvco_0 ua[0] VPWR w_26880_4510# w_28000_4510# VGND ua[1] w_25830_4510# ua[2] vco
 .ends
 

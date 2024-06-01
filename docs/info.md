@@ -17,11 +17,17 @@ This tinytapeout submission consists of:
 ## How to test
 
 Pinouts:
+
 ua[0] - VCO#1 output
+
 ua[1] - VCO#1 control input voltage (-) / Opamp input (+) / Phase Detector ref
+
 ua[2] - VCO#1 control input voltage (+) / Opamp input (+) / Phase Detector input
+
 ua[3] - Opamp output
+
 ua[4] - PLL Filter +
+
 ua[5] - PLL Filter -
 
 

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1717251107
+timestamp 1717256680
 << metal1 >>
 rect 14655 2605 14735 2615
 rect 14655 2595 14665 2605
@@ -207,7 +207,7 @@ rect 11225 0 11315 145
 rect 13433 0 13523 145
 rect 15641 0 15731 145
 use vco  vco_0 ~/design/irfan/tt07-analog-its_ip_alits02/mag/dsrt_vco
-timestamp 1717251107
+timestamp 1717229036
 transform 1 0 12725 0 1 1940
 box -300 -855 1950 1775
 << labels >>

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1717229036
+timestamp 1717251107
 << isosubstrate >>
 rect 190 315 210 335
 rect 400 325 405 345
@@ -767,9 +767,14 @@ rect 1580 -335 1590 155
 rect 1245 -345 1590 -335
 rect 740 -350 1260 -345
 << labels >>
-rlabel metal3 1400 580 1410 590 1 VPWR
+rlabel metal1 1400 580 1410 590 1 VPWR
+port 1 n default input
 rlabel metal1 580 630 590 640 1 VCONT-
+port 2 n default input
 rlabel metal1 1640 450 1650 460 1 OUT
+port 3 n default output
 rlabel metal1 545 270 550 275 1 VCONT+
+port 4 n default input
 rlabel metal1 1360 325 1370 335 1 VGND
+port 5 n default input
 << end >>

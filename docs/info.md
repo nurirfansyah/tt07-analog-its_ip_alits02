@@ -20,15 +20,15 @@ Pinouts:
 
 ua[0] - VCO#1 output
 
-ua[1] - VCO#1 control input voltage (-) / Opamp input (+) / Phase Detector ref
+ua[1] - Opamp input (+) / Phase Detector ref
 
-ua[2] - VCO#1 control input voltage (+) / Opamp input (+) / Phase Detector input
+ua[2] - Opamp input (+) / Phase Detector input
 
 ua[3] - Opamp output
 
-ua[4] - PLL Filter +
+ua[4] - PLL Filter + / VCO#1 control input voltage (-) 
 
-ua[5] - PLL Filter -
+ua[5] - PLL Filter - / VCO#1 control input voltage (+)
 
 
 ## External hardware

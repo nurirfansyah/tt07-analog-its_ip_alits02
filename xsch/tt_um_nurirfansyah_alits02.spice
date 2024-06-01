@@ -1,0 +1,148 @@
+** sch_path: /home/irfansyah/design/irfan/tt07-analog-its_ip_alits02/xsch/tt_um_nurirfansyah_alits02.sch
+.subckt tt_um_nurirfansyah_alits02 clk ena rst_n ua[3] ua[4] ua[5] ua[6] ua[7] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5]
++ ui_in[6] ui_in[7] uio_in[0] uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7] uio_oe[0] uio_oe[1] uio_oe[2] uio_oe[3]
++ uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7] uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] uio_out[0] uio_out[1]
++ uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7] ua[2] ua[1] ui_in[0] uo_out[0] ua[0] VGND VPWR
+*.ipin clk
+*.ipin ena
+*.ipin rst_n
+*.ipin ua[3]
+*.ipin ua[4]
+*.ipin ua[5]
+*.ipin ua[6]
+*.ipin ua[7]
+*.ipin ui_in[1]
+*.ipin ui_in[2]
+*.ipin ui_in[3]
+*.ipin ui_in[4]
+*.ipin ui_in[5]
+*.ipin ui_in[6]
+*.ipin ui_in[7]
+*.ipin uio_in[0]
+*.ipin uio_in[1]
+*.ipin uio_in[2]
+*.ipin uio_in[3]
+*.ipin uio_in[4]
+*.ipin uio_in[5]
+*.ipin uio_in[6]
+*.ipin uio_in[7]
+*.opin uio_oe[0]
+*.opin uio_oe[1]
+*.opin uio_oe[2]
+*.opin uio_oe[3]
+*.opin uio_oe[4]
+*.opin uio_oe[5]
+*.opin uio_oe[6]
+*.opin uio_oe[7]
+*.opin uo_out[1]
+*.opin uo_out[2]
+*.opin uo_out[3]
+*.opin uo_out[4]
+*.opin uo_out[5]
+*.opin uo_out[6]
+*.opin uo_out[7]
+*.iopin uio_out[0]
+*.iopin uio_out[1]
+*.iopin uio_out[2]
+*.iopin uio_out[3]
+*.iopin uio_out[4]
+*.iopin uio_out[5]
+*.iopin uio_out[6]
+*.iopin uio_out[7]
+*.ipin ua[2]
+*.ipin ua[1]
+*.ipin ui_in[0]
+*.opin uo_out[0]
+*.opin ua[0]
+*.iopin VGND
+*.iopin VPWR
+* noconn clk
+* noconn ena
+* noconn rst_n
+* noconn ua[3]
+* noconn ua[6]
+* noconn ui_in[1]
+* noconn ui_in[2]
+* noconn ui_in[3]
+* noconn ui_in[4]
+* noconn ui_in[5]
+* noconn ui_in[6]
+* noconn ui_in[7]
+* noconn uio_in[0]
+* noconn uio_in[1]
+* noconn uio_in[2]
+* noconn uio_in[3]
+* noconn uio_in[4]
+* noconn uio_in[5]
+* noconn uio_in[6]
+* noconn uio_in[7]
+* noconn ua[5]
+* noconn ua[4]
+* noconn ua[7]
+* noconn ui_in[0]
+* noconn uio_oe[0]
+* noconn uio_oe[1]
+* noconn uio_oe[2]
+* noconn uio_oe[3]
+* noconn uio_oe[4]
+* noconn uio_oe[5]
+* noconn uio_oe[6]
+* noconn uio_oe[7]
+* noconn uo_out[5]
+* noconn uo_out[6]
+* noconn uo_out[7]
+* noconn uio_out[0]
+* noconn uio_out[1]
+* noconn uio_out[2]
+* noconn uio_out[3]
+* noconn uio_out[4]
+* noconn uio_out[5]
+* noconn uio_out[6]
+* noconn uio_out[7]
+x1 VPWR ua[1] ua[0] ua[2] VGND ring-oscillator_with_tg
+* noconn uo_out[0]
+* noconn uo_out[1]
+* noconn uo_out[2]
+* noconn uo_out[3]
+* noconn uo_out[4]
+.ends
+
+* expanding   symbol:  dsrt_vco/ring-oscillator_with_tg.sym # of pins=5
+** sym_path: /home/irfansyah/design/irfan/tt07-analog-its_ip_alits02/xsch/dsrt_vco/ring-oscillator_with_tg.sym
+** sch_path: /home/irfansyah/design/irfan/tt07-analog-its_ip_alits02/xsch/dsrt_vco/ring-oscillator_with_tg.sch
+.subckt ring-oscillator_with_tg VPWR VCONT- OUT VCONT+ VGND
+*.ipin VPWR
+*.opin OUT
+*.ipin VGND
+*.ipin VCONT+
+*.ipin VCONT-
+XM7 net1 net5 VPWR VPWR sky130_fd_pr__pfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net3 VCONT- net1 VPWR sky130_fd_pr__pfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 net2 net3 VPWR VPWR sky130_fd_pr__pfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM11 OUT net4 VPWR VPWR sky130_fd_pr__pfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM10 net4 VCONT- net2 VPWR sky130_fd_pr__pfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM12 net5 VCONT- OUT VPWR sky130_fd_pr__pfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XC1 VGND net5 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+XC2 VGND net3 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+XC3 VGND net4 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=10 m=10
+XM13 OUT net4 VGND VGND sky130_fd_pr__nfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net2 net3 VGND VGND sky130_fd_pr__nfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 net5 VGND VGND sky130_fd_pr__nfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 OUT VCONT+ net5 VGND sky130_fd_pr__nfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 VCONT+ net3 VGND sky130_fd_pr__nfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net2 VCONT+ net4 VGND sky130_fd_pr__nfet_01v8 L=0.2 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

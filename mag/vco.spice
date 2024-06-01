@@ -1,0 +1,20 @@
+* NGSPICE file created from vco.ext - technology: sky130A
+
+.subckt vco
+X0 a_290_760# VCONT+ OUT VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X1 a_1970_760# a_1410_760# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X2 OUT a_2530_760# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X3 a_850_760# a_290_760# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X4 a_2530_760# VCONT+ a_1970_760# VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X5 a_1410_760# VCONT+ a_850_760# VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X6 VGND a_1410_760# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X7 a_1970_760# a_1410_760# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X8 a_290_760# VCONT- OUT VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X9 OUT a_2530_760# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X10 VGND a_2530_760# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X11 a_850_760# a_290_760# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X12 a_2530_760# VCONT- a_1970_760# VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X13 a_1410_760# VCONT- a_850_760# VPWR sky130_fd_pr__pfet_01v8 ad=0.2025 pd=1.8 as=0.2025 ps=1.8 w=0.45 l=0.2
+X14 VGND a_290_760# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+.ends
+

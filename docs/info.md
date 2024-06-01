@@ -9,12 +9,22 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This tinytapeout submission consists of:
+1. A VCO based on transmission gates with additional on-chip capacitors to further linearize the response.
+2. A phase detector and VCO to form parts of a PLL.
+3. Basic CMOS Opamp
 
 ## How to test
 
-Explain how to use your project
+Pinouts:
+ua[0] - VCO#1 output
+ua[1] - VCO#1 control input voltage (-) / Opamp input (+) / Phase Detector ref
+ua[2] - VCO#1 control input voltage (+) / Opamp input (+) / Phase Detector input
+ua[3] - Opamp output
+ua[4] - PLL Filter +
+ua[5] - PLL Filter -
+
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+To test, typical experimental setup to test opamp, pll, or vco, would be required.

@@ -3,7 +3,7 @@ project:
   title:        "Analog Test Circuit ITS 2"      # Project title
   author:       "A. N Irfansyah, Raditya Eka, Yohanes Stefanus"      # Your name
   discord:      "irfansyah_99806"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "PLL parts (VCO and phase detector)"      # One line description of what your project does
+  description:  "Experimental PLL parts (VCO and phase detector)"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
